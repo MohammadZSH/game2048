@@ -282,7 +282,7 @@ class Game2048ViewModel : ViewModel() {
         if (newTilePosition == null) {
             //GAME is OVER
         } else {
-            grid.value[newTilePosition.first][newTilePosition.second] = 2
+            grid.value[newTilePosition.first][newTilePosition.second] =if ((1..100).random()>80) 4 else 2
         }
     }
 
